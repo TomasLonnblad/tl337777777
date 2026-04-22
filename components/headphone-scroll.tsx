@@ -3,12 +3,12 @@
 import { useEffect, useRef, useState } from "react"
 import { motion, useScroll, useTransform, useSpring } from "framer-motion"
 
-const FRAME_COUNT = 194
+const FRAME_COUNT = 4
 const IMAGE_PATH = "/frames/"
 
 function getFramePath(index: number): string {
   const paddedIndex = index.toString().padStart(5, "0")
-  return `${IMAGE_PATH}${paddedIndex}.png`
+  return `${IMAGE_PATH}${paddedIndex}.jpg`
 }
 
 export default function HeadphoneScroll() {
